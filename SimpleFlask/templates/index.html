@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Streaming</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <span id="sysStatus" style="font-weight: bold;"> </span>
+        <script>
+            window.setInterval(function(){
+      $("#sysStatus").load("/myStatus");}, 5000)
+            
+            /*function ajaxd() { 
+              //reload result into element with id "sysStatus"
+              $("#sysStatus").load("/myStatus", function() {  alert( "Load was performed." ); });
+            
+            }*/
+            </script>
+    </body>
+</html>
