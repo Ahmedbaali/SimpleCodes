@@ -1,0 +1,9 @@
+
+p {
+  border: 2px solid white;
+  position: relative;
+  float: left;
+  margin-right: 10;
+  margin-bottom: 10;
+  background-color: currentColor;
+}

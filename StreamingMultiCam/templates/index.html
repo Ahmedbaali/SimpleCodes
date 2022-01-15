@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{%block title%}Streaming page{%endblock%}
+{%block content%}
+<div class="container-fluid">
+    <div class="row">
+{% for camera_number in range(0, camera_list) %}
+        <div class="col-md-4">
+            <div class="card" >
+                <img src="{{ url_for('video_feed', list_id=camera_number) }}" >
+                <div class="card-body">
+                  <p class="card-text">Site </p>
+                </div>
+            </div>
+        </div>
+{% endfor %}
+</div>
+</div>
+{%endblock%}
+
+
